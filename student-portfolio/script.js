@@ -1,2 +1,9 @@
-let name = prompt("Enter your name:");
-document.getElementById("greet").innerText = "Hello " + name + ", welcome to my website!";
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("msg").textContent = "Message sent successfully!";
+    this.reset();
+});

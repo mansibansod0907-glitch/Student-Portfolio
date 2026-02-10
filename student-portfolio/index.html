@@ -3,57 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mansi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- ===== NAVBAR ===== -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p id="greet"></p>
+        <nav>
+            <h2 class="logo">Mansi.</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- ===== HOME ===== -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Mansi Bansod</span></h1>
+            <h3>Java Developer | Web Learner</h3>
+            <p>I build applications and love learning new technologies.</p>
+            <button onclick="scrollToContact()">Hire Me</button>
+        </div>
+    </section>
 
-    <section id="about">
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
         <h2>About Me</h2>
-        <p>Hello! I am a student learning Frontend Development. I love creating websites.</p>
+        <p>
+            I'm a passionate developer who enjoys solving problems and building
+            projects using Java, SQL, and Web Technologies.
+        </p>
     </section>
 
-    <section id="skills">
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills">
         <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+        <div class="skill-box">
+            <div>Java</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>SQL</div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="card">Calculator Website</div>
-        <div class="card">Weather App UI</div>
-        <div class="card">Student Result Page</div>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Bank Management System</h3>
+            <p>Core Java project using OOP concepts.</p>
+        </div>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This responsive portfolio built with HTML, CSS, JS.</p>
+        </div>
     </section>
 
-    <section id="contact">
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form id="contactForm">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
+        <p id="msg"></p>
     </section>
-
-    <footer>
-        <p>© 2026 My Portfolio</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
